@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ToyotaAuditoriaImagen.Views.IncidenciasPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+              <Grid BackgroundColor="#F6F6F6">
+                 <Grid.RowDefinitions >    
+                        <RowDefinition Height="110" />                
+                       
+                  </Grid.RowDefinitions>  
+                  <Grid.ColumnDefinitions>                    
+                        <ColumnDefinition Width="*" />  
+                        <ColumnDefinition Width="*" />                  
+                        <ColumnDefinition  Width="*" />  
+                   </Grid.ColumnDefinitions>  
+            <Button HorizontalOptions="Start" Text="Regresar" Clicked="Handle_Clicked" TextColor="Black" FontSize="20"/>
+            <Image Margin="15" Source="logologin.png" Grid.Row="0" Grid.Column="1" HeightRequest="100" WidthRequest="150"/>
+            <Image Margin="10" HorizontalOptions="End" Grid.Row="0" Grid.Column="2" Source="bell.png" />
+          </Grid>
+
+          <Label Text="Zona: **********" TextColor="Black" FontSize="40" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+          <Label Text="Criterio: **********" TextColor="Black" FontSize="40" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+           <Label Text="Limpieza del Piso" TextColor="Black" FontAttributes="Bold" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+
+           <StackLayout VerticalOptions="Center"  Orientation="Horizontal" >
+                <Editor Margin="15" BackgroundColor="#F6F6F6" HeightRequest="200" WidthRequest="600"   />
+                <Button HorizontalOptions="Center" Margin="20" VerticalOptions="Center" Image="camera.png" Clicked="Handle_Clicked_1" />
+         </StackLayout >
+          <StackLayout Spacing="40" VerticalOptions="Center"  Orientation="Horizontal" >
+             <controls:CarouselViewControl HeightRequest="100" Orientation="Horizontal" WidthRequest="500" BackgroundColor="Gray" ItemsSource="{Binding fotosIncidencias}" />
+             <Button Text="Agregar Incidencia" HorizontalOptions="Center" VerticalOptions="Center" />                      
+           </StackLayout >
+             
+        <controls:CarouselViewControl Margin="50" HeightRequest="100" Orientation="Horizontal" WidthRequest="400" BackgroundColor="Gray" ItemsSource="{Binding fotosIncidencias}" />
+          <Label Text="Incidencia 0/0" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" HorizontalTextAlignment="Center" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

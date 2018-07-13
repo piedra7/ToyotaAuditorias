@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />  
+    <PackageReference Include="XLabs.Forms" Version="2.0.5782" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.0.4" />
+    <PackageReference Include="CarouselView.FormsPlugin" Version="5.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behaviors\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\AboutPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ViewModels\ItemsViewModel.cs" />
+    <Compile Remove="Views\AuditoriaPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="toyotauni.png" />
+    <None Remove="mapa.png" />
+    <None Remove="aceptar.png" />
+    <None Remove="entrar.png" />
+    <None Remove="bell.png" />
+    <None Remove="menu.png" />
+    <None Remove="location.png" />
+    <None Remove="mailwhite.png" />
+    <None Remove="camera.png" />
+    <None Remove="documents.png" />
+    <None Remove="history.png" />
+    <None Remove="audit.png" />
+    <None Remove="ongoing.png" />
+    <None Remove="usersmenu.png" />
+    <None Remove="plans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="toyotauni.png" />
+    <EmbeddedResource Include="mapa.png" />
+    <EmbeddedResource Include="aceptar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entrar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bell.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="location.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mailwhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camera.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="documents.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="history.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="audit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ongoing.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usersmenu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="plans.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

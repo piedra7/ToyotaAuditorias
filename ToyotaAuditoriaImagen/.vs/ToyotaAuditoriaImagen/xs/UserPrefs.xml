@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{7AD1E282-D4BE-4E9F-9825-22C85637CE5A}|Default">
+  <MonoDevelop.Ide.ItemProperties.ToyotaAuditoriaImagen.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ED70226A-F0D5-4F8D-9907-03CEDF22FFB7" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ToyotaAuditoriaImagen/Views/PlanosPage.xaml">
+    <Files>
+      <File FileName="ToyotaAuditoriaImagen/Views/AppMenuPage.xaml.cs" Line="30" Column="41" />
+      <File FileName="ToyotaAuditoriaImagen/Views/AppMenuPage.xaml" Line="28" Column="20" />
+      <File FileName="ToyotaAuditoriaImagen/App.xaml" Line="6" Column="53" />
+      <File FileName="ToyotaAuditoriaImagen/Views/MainPage.xaml" Line="5" Column="28" />
+      <File FileName="ToyotaAuditoriaImagen/Views/PlanosPage.xaml" Line="5" Column="9" />
+      <File FileName="ToyotaAuditoriaImagen/Views/PlanosPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="ToyotaAuditoriaImagen/App.xaml.cs" Line="17" Column="37" />
+      <File FileName="ToyotaAuditoriaImagen/Views/LoginPage.xaml.cs" Line="24" Column="9" />
+      <File FileName="ToyotaAuditoriaImagen/Views/LoginPage.xaml" Line="29" Column="27" />
+      <File FileName="ToyotaAuditoriaImagen/ViewModels/LoginPageViewModel.cs" Line="49" Column="18" />
+      <File FileName="ToyotaAuditoriaImagen/Models/Agencia.cs" Line="21" Column="2" />
+      <File FileName="ToyotaAuditoriaImagen/Models/SpartanUserDTO.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/developer7/Documents/ToyotaAuditoriaImagen/ToyotaAuditoriaImagen/ViewModels/LoginViewModel.cs" relfile="ToyotaAuditoriaImagen/ViewModels/LoginViewModel.cs" line="8" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ToyotaAuditoriaImagen.Android PreferredExecutionTarget="Android.my_device" />
+</Properties>

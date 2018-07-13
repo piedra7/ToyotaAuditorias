@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  BackgroundImage="backgroundlogin.png" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ToyotaAuditoriaImagen.Views.RecuperarClavePage">
+    <ContentPage.Content>
+         <StackLayout>
+            <StackLayout Margin="50">
+              <Image Source="logologin.png" Margin="30" HeightRequest="250" WidthRequest="400" MinimumHeightRequest="150" MinimumWidthRequest="300"/>
+           </StackLayout>
+            <StackLayout Spacing="40"  HorizontalOptions="Center">
+                <Label HorizontalOptions="Center" Text="Recuperar Contraseña" TextColor="White" FontSize="40" FontAttributes="Bold"></Label>
+                <Label HorizontalTextAlignment="Center"  WidthRequest="400"  FontSize="30"  HorizontalOptions="Center" TextColor="White" Text="Se te ha enviado un correo con la liga para reestablecer tu contraseña" />
+                <Button Image="aceptar.png" Clicked="Handle_Clicked" />
+            </StackLayout> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

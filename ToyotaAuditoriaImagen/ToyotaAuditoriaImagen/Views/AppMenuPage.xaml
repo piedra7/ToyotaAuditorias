@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="ToyotaAuditoriaImagen.Views.AppMenuPage">
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Menú"
+
+             Padding="0,40,0,0"
+             Icon="menu.png"
+           
+           >
+            <StackLayout HeightRequest="400">
+            <ListView HasUnevenRows="false" Margin="20"  SeparatorVisibility="None" BackgroundColor="#F6F6F8"   x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected" >
+                <ListView.ItemTemplate >
+                    <DataTemplate >
+                        <ImageCell  TextColor="Black" DetailColor="Red" Height="25" 
+                                   ImageSource="{Binding icon}"
+                                   Text="{Binding MenuTitle}"
+                                   >
+                        </ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Cerrar Sesión" />
+            </StackLayout>
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+</MasterDetailPage>

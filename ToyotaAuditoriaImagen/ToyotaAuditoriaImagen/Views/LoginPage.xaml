@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundImage="backgroundlogin.png" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ToyotaAuditoriaImagen.Views.LoginPage">
+    <ContentPage.Content>
+         <StackLayout>
+        <StackLayout Margin="50">
+          <Image Source="logologin.png" Margin="30" HeightRequest="250" WidthRequest="400" MinimumHeightRequest="150" MinimumWidthRequest="300"/>
+        <!-- Place new controls here -->
+        <Label  Text="Sistema de Auditorías" HorizontalTextAlignment="Center" WidthRequest="400"  Margin="50" FontSize="45"  FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+        <StackLayout  VerticalOptions="Center" Margin="10" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="White" Orientation="Horizontal">
+         <Image Source="user.png"  WidthRequest="25" HeightRequest="35" HorizontalOptions="Center" VerticalOptions="Center"/>
+         <Entry   TextColor="Black" Placeholder=" Usuario" HorizontalOptions="StartAndExpand" WidthRequest="329" HeightRequest="50" />
+        </StackLayout>    
+
+    <StackLayout VerticalOptions="Center" Margin="10" HorizontalOptions="Center" WidthRequest="330" BackgroundColor="White" Orientation="Horizontal">
+      <Image Source="password.png" WidthRequest="25" HeightRequest="35" HorizontalOptions="Center" VerticalOptions="Center"/>
+      <Entry IsPassword="true"  TextColor="Black" WidthRequest="329" Placeholder=" Contraseña" HorizontalOptions="StartAndExpand" HeightRequest="50" />
+    </StackLayout>    
+       
+    <StackLayout VerticalOptions="Center"  HorizontalOptions="Center" WidthRequest="330" > 
+              <StackLayout Orientation=" Horizontal"> 
+                   <Label Text="Mantener Sesión Abierta" TextColor="White" FontSize="Large" FontAttributes="Bold" />  <Switch /> </StackLayout>
+        <Button Text="Recuperar Contraseña" FontAttributes="Bold" FontSize="Large" TextColor="White" Clicked="Handle_Clicked_1" />
+        <Button Margin="50"  HeightRequest="50" Clicked="Handle_Clicked" Command="{Binding LoginCommand}"  HorizontalOptions="Center" Image="entrar.png"/>
+                    
+                </StackLayout>
+     </StackLayout> 
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

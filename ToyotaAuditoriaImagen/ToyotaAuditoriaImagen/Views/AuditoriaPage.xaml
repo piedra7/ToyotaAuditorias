@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundImage="backgroundlogin.png" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ToyotaAuditoriaImagen.Views.AuditoriaPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+             <Grid BackgroundColor="#F6F6F6">
+                 <Grid.RowDefinitions >    
+                        <RowDefinition Height="110" />                
+                       
+                  </Grid.RowDefinitions>  
+                  <Grid.ColumnDefinitions>                    
+                        <ColumnDefinition Width="*" />  
+                        <ColumnDefinition Width="*" />                  
+                        <ColumnDefinition  Width="*" />  
+                   </Grid.ColumnDefinitions>  
+            <Button HorizontalOptions="Start" Text="Regresar" Clicked="Handle_Clicked" TextColor="Black" FontSize="20"/>
+            <Image Margin="15" Source="logologin.png" Grid.Row="0" Grid.Column="1" HeightRequest="100" WidthRequest="150"/>
+            <Image Margin="10" HorizontalOptions="End" Grid.Row="0" Grid.Column="2" Source="bell.png" />
+          </Grid>
+         
+         <StackLayout Orientation="Horizontal">
+            <FlexLayout Direction="Column" BackgroundColor="#F6F6F6" HeightRequest="900" WidthRequest="310"> 
+            <StackLayout HorizontalOptions="Center">
+                    <Label HorizontalOptions="Center" TextColor="White" FontSize="30" Text="Auditorias"></Label>
+                    
+                    <ListView BackgroundColor="#F6F6F6" ItemsSource="{Binding ZonasAuditoria}">
+                        
+                    </ListView>
+                        </StackLayout>
+            </FlexLayout>
+                <StackLayout HorizontalOptions="Center"  Orientation="Vertical">
+
+                    <Label HorizontalOptions="Center" FontSize="30"  TextColor="White" Text="Auditor: Arq. Gerardo"></Label>
+                    <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" Text="Toyota Aeropuerto Grupo Samurai"></Label>
+                    <ProgressBar  BackgroundColor="Black"  ProgressColor="White" Progress="50"></ProgressBar>
+                    <Label HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" Text="Progreso"></Label>
+                    <StackLayout HorizontalOptions="StartAndExpand" Margin="20" VerticalOptions="StartAndExpand">
+                    <Button  Image="mapa.png" HeightRequest="500" Clicked="Handle_Clicked_1" HorizontalOptions="Start" WidthRequest="500" />
+                    </StackLayout>
+                </StackLayout>
+
+                
+          </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
